@@ -258,7 +258,7 @@
           <h2 class="text-3xl font-semibold">Start Your Real Estate Journey Today</h2>
           <p class="mt-4 text-muted leading-relaxed">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
         </div>
-        <a href="#properties" class="shrink-0 rounded-lg bg-brand px-6 py-3 text-sm font-medium hover:bg-brand-dark">Explore Properties</a>
+        <a href="/properties" class="shrink-0 rounded-lg bg-brand px-6 py-3 text-sm font-medium hover:bg-brand-dark">Explore Properties</a>
       </div>
     </section>
   </main>
