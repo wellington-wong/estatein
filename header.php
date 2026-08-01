@@ -13,7 +13,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('bg-black text-white'); ?>>
+<body <?php body_class('bg-panel text-white'); ?>>
 
 <?php wp_body_open(); ?>
 
