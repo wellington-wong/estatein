@@ -25,4 +25,4 @@ jobs:
 
           script: |
             cd /var/www/estatein/wp-content/themes/estatein
-            git pull origin main
+            git pull origin master
