@@ -28,7 +28,7 @@
         </div>
         <div class="relative">
           <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-line bg-gradient-to-br from-brand/30 via-panel to-ink grid place-items-center">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home-bldg.jpg"
+          <img src="<?php echo esc_url( get_the_post_thumbnail_url( get_the_ID(), 'large' ) ); ?>"
                alt="Modern blue glass skyscrapers representing Estatein properties"
                class="" />
           </div>
