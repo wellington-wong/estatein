@@ -47,7 +47,6 @@
         ]);
         ?>
       </nav>
-
       <a href="<?php echo esc_url( get_permalink( 21 ) ); ?>" class="rounded-lg border border-line bg-panel px-5 py-2.5 text-sm font-medium hover:bg-panel-2">Contact Us</a>
     </div>
   </header>
