@@ -36,12 +36,16 @@
         </span>
         Estatein
       </a>
-
       <nav aria-label="Primary" class="hidden md:flex items-center gap-1 rounded-full border border-line bg-panel px-2 py-1">
-        <a href="#" class="rounded-full px-4 py-2 text-sm bg-panel-2">Home</a>
-        <a href="#about" class="rounded-full px-4 py-2 text-sm text-muted hover:text-white">About Us</a>
-        <a href="#properties" class="rounded-full px-4 py-2 text-sm text-muted hover:text-white">Properties</a>
-        <a href="#services" class="rounded-full px-4 py-2 text-sm text-muted hover:text-white">Services</a>
+        <?php
+        wp_nav_menu([
+            'menu' => 'Menu 1',
+            'container'      => false,
+            'items_wrap'     => '%3$s',   // strips outer <ul> too
+            'walker'         => new Estatein_Clean_Walker(),
+            'fallback_cb'    => false,
+        ]);
+        ?>
       </nav>
 
       <a href="#contact" class="rounded-lg border border-line bg-panel px-5 py-2.5 text-sm font-medium hover:bg-panel-2">Contact Us</a>

@@ -61,3 +61,21 @@ function estatein_enqueue_assets()
 }
 
 add_action('wp_enqueue_scripts', 'estatein_enqueue_assets');
+
+
+add_filter('nav_menu_css_class', function($classes, $item, $args) {
+    return [];
+}, 10, 3);
+
+class Estatein_Clean_Walker extends Walker_Nav_Menu {
+    function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
+        $output .= '<a href="' . esc_url($item->url) . '" class="rounded-full px-4 py-2 text-sm text-muted hover:text-white">' . esc_html($item->title) . '</a>';
+    }
+
+    function end_el(&$output, $item, $depth = 0, $args = null) {
+        // nothing — no closing tag needed
+    }
+
+    function start_lvl(&$output, $depth = 0, $args = null) {}
+    function end_lvl(&$output, $depth = 0, $args = null) {}
+}
