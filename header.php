@@ -11,23 +11,6 @@
     content="width=device-width, initial-scale=1">
 
 <?php wp_head(); ?>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          brand: '#703BF7',
-          'brand-dark': '#5a2fd0',
-          ink: '#0a0a0a',
-          panel: '#141414',
-          'panel-2': '#191919',
-          line: '#262626',
-          muted: '#a0a0a0',
-        },
-      },
-    },
-  };
-</script>
 </head>
 
 <body <?php body_class('bg-black text-white'); ?>>
