@@ -32,7 +32,7 @@
     <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="flex items-center gap-2 font-semibold text-lg">
         <span class="grid place-items-center h-8 w-8 rounded-md bg-brand/20">
-          <svg viewBox="0 0 24 24" class="h-5 w-5 text-brand" fill="currentColor" aria-hidden="true"><path d="M6 3c0 6 3 9 6 9-3 0-6 3-6 9V3zM18 3c0 6-3 9-6 9 3 0 6 3 6 9V3z"/></svg>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" />
         </span>
         Estatein
       </a>
@@ -47,6 +47,6 @@
         ]);
         ?>
       </nav>
-      <a href="<?php echo esc_url( get_permalink( 21 ) ); ?>" class="rounded-lg border border-line bg-panel px-5 py-2.5 text-sm font-medium hover:bg-panel-2">Contact Us</a>
+      <a href="<?php echo esc_url( home_url('/contact-us') ); ?>" class="rounded-lg border border-line bg-panel px-5 py-2.5 text-sm font-medium <?php echo (is_page('contact-us')?:"text-muted ") ?>hover:text-white">Contact Us</a>
     </div>
   </header>

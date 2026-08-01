@@ -5,7 +5,7 @@
         <div class="lg:col-span-1">
           <a href="#" class="flex items-center gap-2 font-semibold text-lg">
             <span class="grid place-items-center h-8 w-8 rounded-md bg-brand/20">
-              <svg viewBox="0 0 24 24" class="h-5 w-5 text-brand" fill="currentColor" aria-hidden="true"><path d="M6 3c0 6 3 9 6 9-3 0-6 3-6 9V3zM18 3c0 6-3 9-6 9 3 0 6 3 6 9V3z"/></svg>
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" />
             </span>
             Estatein
           </a>
