@@ -13,12 +13,12 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('bg-black text-white'); ?>>
+<body <?php body_class('bg-panel text-white'); ?>>
 
 <?php wp_body_open(); ?>
 
   <!-- Announcement bar -->
-  <div class="bg-panel border-b border-line">
+  <div class="bg-panel border-b border-line hidden" id="top-announcement">
     <div class="mx-auto max-w-7xl px-4 py-2.5 flex items-center justify-center gap-2 text-sm text-gray-300 relative">
       <span aria-hidden="true" class="text-brand">✦</span>
       <span>Discover Your Dream Property with Estatein</span>
