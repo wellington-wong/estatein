@@ -27,11 +27,10 @@
           </dl>
         </div>
         <div class="relative">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Home%20Page%20-%20Desktop-48QNiEGcbXcZ6XjJCgbwi6qlSekjsx.png"
-               alt="Modern blue glass skyscrapers representing Estatein properties"
-               class="hidden" />
           <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-line bg-gradient-to-br from-brand/30 via-panel to-ink grid place-items-center">
-            <svg viewBox="0 0 24 24" class="h-24 w-24 text-brand/70" fill="currentColor" aria-hidden="true"><path d="M3 21V9l7-4 7 4v12h-4v-6h-6v6H3z"/></svg>
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home-bldg.jpg"
+               alt="Modern blue glass skyscrapers representing Estatein properties"
+               class="" />
           </div>
         </div>
       </div>
