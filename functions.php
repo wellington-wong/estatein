@@ -69,7 +69,15 @@ add_filter('nav_menu_css_class', function($classes, $item, $args) {
 
 class Estatein_Clean_Walker extends Walker_Nav_Menu {
     function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
-        $output .= '<a href="' . esc_url($item->url) . '" class="rounded-full px-4 py-2 text-sm text-muted hover:text-white">' . esc_html($item->title) . '</a>';
+        $classes = !empty($args->link_class) ? $args->link_class : '';
+
+        // Check WP's internal classes for "current" state
+        if (in_array('current-menu-item', $item->classes) || in_array('current-menu-parent', $item->classes)) {
+            $classes .= 'rounded-full px-4 py-2 text-sm hover:text-white';
+        } else {
+            $classes .= 'rounded-full px-4 py-2 text-sm text-muted hover:text-white';
+        }
+        $output .= '<a href="' . esc_url($item->url) . '" class="' . $classes . '">' . esc_html($item->title) . '</a>';
     }
 
     function end_el(&$output, $item, $depth = 0, $args = null) {

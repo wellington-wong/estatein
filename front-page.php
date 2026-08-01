@@ -8,8 +8,8 @@
           <h1 class="text-4xl md:text-5xl font-semibold leading-tight text-balance">Discover Your Dream Property with Estatein</h1>
           <p class="mt-6 text-muted max-w-md leading-relaxed">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
           <div class="mt-8 flex flex-wrap gap-4">
-            <a href="#" class="rounded-lg border border-line bg-panel px-6 py-3 text-sm font-medium hover:bg-panel-2">Learn More</a>
-            <a href="#properties" class="rounded-lg bg-brand px-6 py-3 text-sm font-medium hover:bg-brand-dark">Browse Properties</a>
+            <a href="<?php echo esc_url( get_permalink( 20 ) ); ?>" class="rounded-lg border border-line bg-panel px-6 py-3 text-sm font-medium hover:bg-panel-2">Learn More</a>
+            <a href="/properties" class="rounded-lg bg-brand px-6 py-3 text-sm font-medium hover:bg-brand-dark">Browse Properties</a>
           </div>
           <dl class="mt-10 grid grid-cols-3 gap-4 max-w-lg">
             <div class="rounded-xl border border-line bg-panel p-5">
