@@ -1,7 +1,10 @@
 # .github/workflows/deploy.yml
 name: Deploy to VPS
 
+
+
 on:
+  workflow_dispatch:
   push:
     branches: [master]   # runs only when you push/merge to master
 
