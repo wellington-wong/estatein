@@ -4,7 +4,7 @@
       <div class="grid gap-10 lg:grid-cols-5">
         <div class="lg:col-span-1">
           <a href="#" class="flex items-center gap-2 font-semibold text-lg">
-            <span class="grid place-items-center h-8 w-8 rounded-md bg-brand/20">
+            <span class="grid place-items-center h-8 w-8 rounded-md">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" />
             </span>
             Estatein

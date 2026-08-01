@@ -31,7 +31,7 @@
   <header class="border-b border-line">
     <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="flex items-center gap-2 font-semibold text-lg">
-        <span class="grid place-items-center h-8 w-8 rounded-md bg-brand/20">
+        <span class="grid place-items-center h-8 w-8 rounded-md">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" />
         </span>
         Estatein
