@@ -93,7 +93,7 @@
                 <p class="text-xs text-muted">Price</p>
                 <p class="text-lg font-semibold">$550,000</p>
               </div>
-              <a href="#" class="rounded-lg bg-brand px-5 py-2.5 text-sm font-medium hover:bg-brand-dark">View Property Details</a>
+              <a href="<?php echo esc_url( get_permalink( 45 ) ); ?>" class="rounded-lg bg-brand px-5 py-2.5 text-sm font-medium hover:bg-brand-dark">View Property Details</a>
             </div>
           </article>
 
