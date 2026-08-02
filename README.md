@@ -108,21 +108,6 @@ Visit the deployed project:
 
 ---
 
-## 📸 Preview
-
-> Replace the image below with your latest project screenshot.
-
-```text
-docs/
-└── preview.png
-```
-
-```md
-![Estatein Preview](docs/preview.png)
-```
-
----
-
 ## 📖 Purpose
 
 This project serves as a portfolio/demo application demonstrating:
