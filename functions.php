@@ -87,3 +87,11 @@ class Estatein_Clean_Walker extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = null) {}
     function end_lvl(&$output, $depth = 0, $args = null) {}
 }
+
+function estatein_allow_html_in_editor($init) {
+    $init['verify_html'] = false;
+    $init['cleanup'] = false;
+    $init['convert_urls'] = false;
+    return $init;
+}
+add_filter('tiny_mce_before_init', 'estatein_allow_html_in_editor');

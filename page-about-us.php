@@ -6,22 +6,11 @@
       <div class="mx-auto max-w-7xl grid lg:grid-cols-2 gap-10 px-4 py-16 items-center">
         <div>
           <div class="text-brand mb-3" aria-hidden="true">✦</div>
-          <h1 class="text-3xl md:text-4xl font-semibold">Our Journey</h1>
-          <p class="mt-4 text-muted max-w-lg leading-relaxed">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients.</p>
-          <dl class="mt-8 grid grid-cols-3 gap-4 max-w-lg">
-            <div class="rounded-xl border border-line bg-panel p-5">
-              <dt class="text-2xl font-semibold">200+</dt>
-              <dd class="mt-1 text-sm text-muted">Happy Customers</dd>
-            </div>
-            <div class="rounded-xl border border-line bg-panel p-5">
-              <dt class="text-2xl font-semibold">10k+</dt>
-              <dd class="mt-1 text-sm text-muted">Properties For Clients</dd>
-            </div>
-            <div class="rounded-xl border border-line bg-panel p-5">
-              <dt class="text-2xl font-semibold">16+</dt>
-              <dd class="mt-1 text-sm text-muted">Years of Experience</dd>
-            </div>
-          </dl>
+          <?php the_content(); ?>          
+          <?php $statistics = get_field('statistics'); ?>
+          <?php if ($statistics) : ?>
+              <?php print $statistics; ?>
+          <?php endif; ?>
         </div>
         <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-line from-brand/20 via-panel to-ink grid place-items-center">
           <img src="<?php echo esc_url( get_the_post_thumbnail_url( get_the_ID(), 'large' ) ); ?>" class="about-us-hero" />

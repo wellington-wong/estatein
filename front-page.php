@@ -10,20 +10,10 @@
             <a href="<?php echo esc_url( get_permalink( 20 ) ); ?>" class="rounded-lg border border-line bg-panel px-6 py-3 text-sm font-medium hover:bg-panel-2">Learn More</a>
             <a href="<?php echo esc_url( home_url('/properties') ); ?>" class="rounded-lg bg-brand px-6 py-3 text-sm font-medium hover:bg-brand-dark">Browse Properties</a>
           </div>
-          <dl class="mt-10 grid grid-cols-3 gap-4 max-w-lg">
-            <div class="rounded-xl border border-line bg-panel p-5">
-              <dt class="text-2xl font-semibold">200+</dt>
-              <dd class="mt-1 text-sm text-muted">Happy Customers</dd>
-            </div>
-            <div class="rounded-xl border border-line bg-panel p-5">
-              <dt class="text-2xl font-semibold">10k+</dt>
-              <dd class="mt-1 text-sm text-muted">Properties For Clients</dd>
-            </div>
-            <div class="rounded-xl border border-line bg-panel p-5">
-              <dt class="text-2xl font-semibold">16+</dt>
-              <dd class="mt-1 text-sm text-muted">Years of Experience</dd>
-            </div>
-          </dl>
+          <?php $statistics = get_field('statistics'); ?>
+          <?php if ($statistics) : ?>
+              <?php print $statistics; ?>
+          <?php endif; ?>
         </div>
         <div class="relative">
           <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-line bg-gradient-to-br from-brand/30 via-panel to-ink grid place-items-center">
@@ -37,28 +27,10 @@
 
     <!-- Feature bar -->
     <section id="services" class="border-b border-line bg-panel">
-      <div class="mx-auto max-w-7xl grid sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-line">
-        <article class="p-8 relative">
-          <a href="#" aria-label="Find Your Dream Home" class="absolute top-6 right-6 text-muted hover:text-white">↗</a>
-          <div class="grid place-items-center h-12 w-12 rounded-full border border-line bg-panel-2 text-brand text-xl">🏠</div>
-          <h3 class="mt-6 text-sm font-medium">Find Your Dream Home</h3>
-        </article>
-        <article class="p-8 relative">
-          <a href="#" aria-label="Unlock Property Value" class="absolute top-6 right-6 text-muted hover:text-white">↗</a>
-          <div class="grid place-items-center h-12 w-12 rounded-full border border-line bg-panel-2 text-brand text-xl">💳</div>
-          <h3 class="mt-6 text-sm font-medium">Unlock Property Value</h3>
-        </article>
-        <article class="p-8 relative">
-          <a href="#" aria-label="Effortless Property Management" class="absolute top-6 right-6 text-muted hover:text-white">↗</a>
-          <div class="grid place-items-center h-12 w-12 rounded-full border border-line bg-panel-2 text-brand text-xl">🏢</div>
-          <h3 class="mt-6 text-sm font-medium">Effortless Property Management</h3>
-        </article>
-        <article class="p-8 relative">
-          <a href="#" aria-label="Smart Investments, Informed Decisions" class="absolute top-6 right-6 text-muted hover:text-white">↗</a>
-          <div class="grid place-items-center h-12 w-12 rounded-full border border-line bg-panel-2 text-brand text-xl">☀</div>
-          <h3 class="mt-6 text-sm font-medium">Smart Investments, Informed Decisions</h3>
-        </article>
-      </div>
+        <?php $feature_bar = get_field('feature_bar'); ?>
+        <?php if ($feature_bar) : ?>
+            <?php print $feature_bar; ?>
+        <?php endif; ?>
     </section>
 
     <!-- Featured Properties -->
