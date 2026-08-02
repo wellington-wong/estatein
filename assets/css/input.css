@@ -16,3 +16,10 @@
 	--color-line: #262626;
 	--color-muted: #a0a0a0;
 }
+
+
+.about-us-hero {
+	max-width: none;
+	width: 105%;
+
+}

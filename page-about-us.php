@@ -23,8 +23,8 @@
             </div>
           </dl>
         </div>
-        <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-line bg-gradient-to-br from-brand/20 via-panel to-ink grid place-items-center">
-          <svg viewBox="0 0 24 24" class="h-24 w-24 text-white/30" fill="currentColor" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12h-6v-7h-6v7H3z"/></svg>
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-line from-brand/20 via-panel to-ink grid place-items-center">
+          <img src="<?php echo esc_url( get_the_post_thumbnail_url( get_the_ID(), 'large' ) ); ?>" class="about-us-hero" />
         </div>
       </div>
     </section>
